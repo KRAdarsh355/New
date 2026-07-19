@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p><b>You can reach us through this page.</b></p>
+    <p>Please enter your details</p>
+    <form method="post" target="_self">
+        <label for="fullname">Enter your name.</label>
+        <input type="text" id="fullname" name="name" placeholder="Enter your name"><br>
+        <label for="Phnumber">Enter your phone number</label>
+        <input type="tel" id="Phnumber" name="Phnumber" placeholder="Enter your phone number"><br>
+        <label for="Communication">What is your issue?</label>
+        <select id="Communication" name="Comms">
+            <option value="Sales">Sales</option>
+            <option value="Service">Service</option>
+            <option value="Enquiry">Enquiry</option>
+            <option value="Advertisement">Advertisement</option>
+            <option value="Complaint">Complaint</option>
+        </select><br>
+        <label for="desc">Describe your issue.</label><br>
+        <textarea rows="15" cols="60" placeholder="Describe your issue here">
+        </textarea><br>
+        <input type="submit" name="submit" value="Post it">
+    </form>
+</body>
+</html>
