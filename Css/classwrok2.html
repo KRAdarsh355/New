@@ -6,12 +6,35 @@
     <title>Layered Box Model</title>
 </head>
     <style>
-        p{background-color:pink;}
-        p.solid{border-style:solid;}
-        p.padding{padding-top:50px;
-              bbbbbbb  }
+        .inner{
+            width: 80px;
+            height:40px;
+            border:3px solid red;
+            margin:20px auto;
+            padding:20px 20px;
+        }
+        .outer{
+            width:400px;
+            height:200px;
+            margin:50px auto;
+            padding:20px 20px;
+            border:3px green dotted; 
+        }
+        .layer{
+            width:320px;
+            height:120px;
+            padding:20px 20px;
+            border:3px dashed yellow;
+            margin:20px auto;
+        }
     </style>
 <body>
-    <p class="solid" class="padding">Content</p>
+    <div class="outer">
+        <div class="layer">
+            <div class="inner">
+                <p>PIXEL</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
