@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamBakers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+        <h1 class="bg-success text-center text-white mb-5 display-4 font-weight-bold font-italic">DreamBakers</h1>
+        <div class="form-inline ml-5">
+            <label for="Name"><b>Name:</b>
+                <input class="form-control mr-5" type="text" id="Name" name="name" placeholder="Enter your name">
+            </label>
+            <label for="email"><b>Email:</b>
+                <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email">
+            </label>
+        </div>
+        <div class="form-group mx-5 mt-3">
+            <label for="comm"><b>Feedback:</b></label>
+            <textarea class="form-control" id="comm" rows="4"></textarea>
+        </div>
+        <div class="form-group mx-5">
+            <label for="sel1"><b>Prefered contact method:</b></label>
+            <select id="sel1" class="form-control">
+                <option>Phone</option>
+                <option>Email</option>
+            </select>
+        </div>
+        <div class="form-group mx-5">
+            <label for="Satisfaction"><b>Satisfaction:</b></label>
+            <div class="d-flex justify-content-between">
+                <span>1</span>
+                <span>10</span>
+            </div>
+            <input type="range" class="form-control-range" name="range" min="1" max="10">
+        </div>
+        <div class="form-group mx-5">
+            <label for="sel"><b>Type of order:</b></label>
+            <select id="sel" class="form-control">
+                <option>Pastries</option>
+                <option>Cakes</option>
+                <option>Cookies</option>
+            </select>
+        </div>
+        <div class="form-group d-flex justify-content-center">
+            <input type="submit" class="btn btn-success font-weight-bold">
+        </div>
+    </div>
+    
+</body>
+</html>
