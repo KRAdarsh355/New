@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics Widget</title>
+</head>
+<body>
+    <p id="done"></p>
+    <script>
+        
+        let number=Math.floor(Math.random()*100)+1
+        let userScore="75"
+        let scoreNum=Number(userScore)
+        let diff=number-scoreNum
+        let rsScoreNum= Math.round(Math.sqrt(scoreNum))
+        let pie=Math.PI;
+        let num="50"*2
+        document.getElementById("done").innerHTML="Random number ="+number+"<br> User Score ="+scoreNum+"<br> Difference between Random number and User score="+diff+"<br> Rounded squreroot of Score Number="+rsScoreNum+"<br>Math PI="+pie+"<br> Implicit conversion="+num;
+
+        
+    </script>
+    
+</body>
+</html>

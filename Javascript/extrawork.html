@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Today</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:bisque">
+    <div class="container-fluid p-0">
+        <h1 class="bg-danger font-italic font-weight-bolder text-center text-white mb-5">Quotes For You</h1>
+        <div class="d-flex flex-column align-items-center">
+            <input type="button" class="btn btn-danger mt-5" onclick="quo()" value="Quote for you">
+            <p id="appear" class="bg-danger text-white font-italic font-weight-bold px-5 py-2 mt-5"></p>
+    
+    <script>
+       let lih=["'In the end, the whole of life becomes an act of letting go.'","'Silence says what words cannot.'","'Curiosity is a quiet form of courage.'","'Not every path needs a destination.'","'Chaos has its own kind of beauty.'","'You become what you repeatedly choose.'","'Stars don't need permission to shine.'","'A calm mind sees further.'","'Some moments are meant to remain unfinished.'","'The ordinary becomes extraordinary when noticed.'"]
+        function quo(){
+            let rnd=Math.round(Math.random()*lih.length)
+            document.getElementById("appear").innerHTML=lih[rnd];
+        
+        }
+    </script> 
+        </div>
+    </div>
+    
+</body>
+</html>

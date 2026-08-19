@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p id="gen"></p>
+    <script>
+        let rnd=Math.round(Math.random()*50)+1;
+        let userScore="25"
+        let scoreNum=Number(userScore)
+        let diff=Math.abs(rnd-userScore)
+        let sqlog=Math.log(Math.sqrt(userScore))
+        let logs=Math.log(Math.PI)
+        let num="20"*5
+        let high=Math.max(10,20,rnd)
+        let low=Math.min(10,20,rnd)
+
+        document.getElementById("gen").innerHTML="Mystery level="+rnd+"<br> User score="+scoreNum+
+        "<br> Absolute difference between the mystery level and the UserScore="+diff+"<br>Log of square root of the UserScore="+sqlog+
+        "<br> Log of PI="+logs+"<br> Implicit Conversion="+num+"<br> Highest value among [10,20,Mystery Number]="+high+"<br>Highest value among [10,20,Mystery Number]="+low;
+
+    </script>
+</body>
+</html>
