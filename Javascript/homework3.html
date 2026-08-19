@@ -11,13 +11,11 @@
             username:"CoolUser99",
             bio:  " I LOVE coding! JavaScript is Great!!! ",
         };
-        var i
-        var count=0;
         function cleanUserBio(profile){
-            username=profile.username.trim().toLowerCase()
-            bio=profile.bio.trim().toLowerCase()
-            username=profile.username.replace("javascript","JS")
-            var biolen=bio.length
+            let username=profile.username.trim().toLowerCase()
+            let bio=profile.bio.trim().toLowerCase()
+            bio=bio.replace("javascript","JS")
+            let biolen=bio.length
             return{
                 username,
                 bio,
